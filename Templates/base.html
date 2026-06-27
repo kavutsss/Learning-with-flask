@@ -1,0 +1,16 @@
+{{bootstrap.load_css()}}
+<!-- This is a jinja command that loads the bootstrap css file -->
+<!-- Jinja2 is a templating engine for Python this means that it can be used to generate html files from templates-->
+<!--Templates are html files that contain variables and expressions that are replaced with actual values when the template is rendered-->
+{% block title %}Naggy's Catalog{% endblock %}
+<!--This creates a placeholder whereby if the child template doesnt provide a title, the default title will be "Naggy's Catalog"-->
+<body class="d-flex flex-column min-vh-100 bg-light">
+<a class="navbar-brand fw-bold" href="{{url_for('home')}}">Naggy's Catalog</a>
+<!--The href attribute is used to specify the URL of the page the link goes to-->
+<!--The url_for() function is used to generate URLs for Flask routes, this typically means that the url will move to app.py look for the home function then return the home template-->
+<!--This is baisically done so as to ensure that there are no broken links in case you decide to change the url path-->
+<!--ps;A broken link is a link that does not work, it is usually caused by a typo in the url or a missing file-->
+{% block content %}{% endblock %}
+{{bootstrap.load_js()}}
+<!-- This is a jinja command that loads the bootstrap js file , it handles things like dropdowns, modals, and other interactive elements-->
+</body>
