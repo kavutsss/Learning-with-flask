@@ -2,28 +2,40 @@
 {% block title %}Home | Naggy's Kitchen{% endblock %}
 {% block content %}
 <div id="heroCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+    </div>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <div style="height: 500px; background: linear-gradient(rgba(93, 64, 55, 0.7), rgba(51, 105, 30, 0.7)), url('https://images.unsplash.com/photo-1606787366850-de6330128bfc?w=1200'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center;">
+            <div style="height: 560px; background: linear-gradient(rgba(58, 42, 32, 0.55), rgba(58, 42, 32, 0.65)), url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1600&q=80'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center;">
                 <div class="container text-center text-white">
-                    <h1 class="display-4 fw-bold" style="font-family: 'Georgia', serif; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Karibu to Naggy's Kitchen</h1>
-                    <p class="lead mx-auto" style="max-width: 600px; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">Authentic Kenyan flavors prepared with traditional recipes and fresh local ingredients</p>
+                    <p class="section-eyebrow" style="color: var(--gold);">Authentic Kenyan Kitchen</p>
+                    <h1 class="display-4 fw-bold mb-3" style="text-shadow: 2px 2px 6px rgba(0,0,0,0.5);">Karibu to Naggy's Kitchen</h1>
+                    <p class="lead mx-auto" style="max-width: 620px; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">Traditional recipes, fresh local produce, and food made with the same love as a meal at home.</p>
+                    <div class="mt-4">
+                        <a href="#catalog-preview" class="btn btn-primary btn-lg me-2">Browse the Menu</a>
+                        <a href="{{url_for('about')}}" class="btn btn-outline-light btn-lg">Our Story</a>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="carousel-item">
-            <div style="height: 500px; background: linear-gradient(rgba(93, 64, 55, 0.7), rgba(51, 105, 30, 0.7)), url('https://images.unsplash.com/photo-1512058564366-18510be2db19?w=1200'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center;">
+            <div style="height: 560px; background: linear-gradient(rgba(58, 42, 32, 0.55), rgba(58, 42, 32, 0.65)), url('https://images.unsplash.com/photo-1432139555190-58524dae6a55?w=1600&q=80'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center;">
                 <div class="container text-center text-white">
-                    <h1 class="display-4 fw-bold" style="font-family: 'Georgia', serif; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Taste Kenyan Tradition</h1>
-                    <p class="lead mx-auto" style="max-width: 600px; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">Experience the rich culinary heritage of Kenya in every dish</p>
+                    <p class="section-eyebrow" style="color: var(--gold);">A Taste of Tradition</p>
+                    <h1 class="display-4 fw-bold mb-3" style="text-shadow: 2px 2px 6px rgba(0,0,0,0.5);">Cooked the Way Mama Taught Us</h1>
+                    <p class="lead mx-auto" style="max-width: 620px; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">No shortcuts, no pre-made mixes — just slow, honest cooking and family recipes.</p>
                 </div>
             </div>
         </div>
         <div class="carousel-item">
-            <div style="height: 500px; background: linear-gradient(rgba(93, 64, 55, 0.7), rgba(51, 105, 30, 0.7)), url('https://images.unsplash.com/photo-1544025162-d76694265947?w=1200'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center;">
+            <div style="height: 560px; background: linear-gradient(rgba(58, 42, 32, 0.55), rgba(58, 42, 32, 0.65)), url('https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=1600&q=80'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center;">
                 <div class="container text-center text-white">
-                    <h1 class="display-4 fw-bold" style="font-family: 'Georgia', serif; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Fresh from Kenyan Farms</h1>
-                    <p class="lead mx-auto" style="max-width: 600px; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">Locally sourced ingredients prepared with love and care</p>
+                    <p class="section-eyebrow" style="color: var(--gold);">Fresh From Local Markets</p>
+                    <h1 class="display-4 fw-bold mb-3" style="text-shadow: 2px 2px 6px rgba(0,0,0,0.5);">Chosen by Hand Every Morning</h1>
+                    <p class="lead mx-auto" style="max-width: 620px; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">We pick the freshest vegetables and meat from Marikiti Market, from farmers we know by name.</p>
                 </div>
             </div>
         </div>
@@ -36,34 +48,26 @@
     </button>
 </div>
 
-<div class="container my-4 text-center">
-    <div class="mt-4">
-        <a href="#catalog-preview" class="btn btn-light btn-lg px-4 me-2" style="color: #5D4037;">Browse Our Menu</a>
-        <a href="{{url_for('about')}}" class="btn btn-outline-light btn-lg px-4" style="color: #5D4037; border-color: #5D4037;">Our Story</a>
-    </div>
-</div>
-
 <div class="container my-5" id="catalog-preview">
-    <h2 class="fw-bold mb-4 text-center" style="color: #5D4037;">Our Kenyan Dishes</h2>
-    <p class="text-center text-muted mb-5">Traditional recipes prepared the way our mothers and grandmothers taught us</p>
-    
+    <div class="text-center mb-5">
+        <p class="section-eyebrow">From Our Kitchen</p>
+        <h2 class="display-5 fw-bold text-espresso mb-0">Our Kenyan Dishes</h2>
+        <hr class="divider">
+        <p class="text-soft mx-auto" style="max-width: 600px;">Traditional recipes prepared the way our mothers and grandmothers taught us.</p>
+    </div>
+
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-        
+
         <div class="col">
             <div class="card h-100">
-                <div class="rounded-top" style="min-height: 200px; display: flex; align-items: center; justify-content: center; background: linear-gradient(45deg, #8D6E63, #A1887F);">
-                    <div class="text-center text-white">
-                        <div style="font-size: 1.5rem; font-weight: bold; letter-spacing: 2px;">UGALI</div>
-                        <small class="text-uppercase tracking-wider">Traditional Staple</small>
-                    </div>
-                </div>
+                <div class="dish-img" style="background-image: url('https://images.unsplash.com/photo-1432139555190-58524dae6a55?w=800&q=80');"></div>
                 <div class="card-body">
-                    <span class="badge mb-2" style="background-color: #33691E;">Signature Dish</span>
-                    <h5 class="card-title fw-bold" style="color: #5D4037;">Ugali with Nyama Choma</h5>
-                    <p class="card-text text-muted">Our maize meal served with roasted meat. This is what we eat when we gather with family and friends.</p>
+                    <span class="badge badge-clay mb-2">Signature Dish</span>
+                    <h5 class="card-title fw-bold text-espresso">Ugali with Nyama Choma</h5>
+                    <p class="card-text text-soft">Our maize meal served with roasted meat — what we eat when we gather with family and friends.</p>
                 </div>
-                <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center pb-3">
-                    <span class="fw-bold" style="color: #BF360C;">KES 850</span>
+                <div class="card-footer bg-transparent border-0 d-flex justify-content-between align-items-center pb-3">
+                    <span class="price">KES 850</span>
                     <a href="#" class="btn btn-sm btn-outline-primary">Order Now</a>
                 </div>
             </div>
@@ -71,19 +75,14 @@
 
         <div class="col">
             <div class="card h-100">
-                <div class="rounded-top" style="min-height: 200px; display: flex; align-items: center; justify-content: center; background: linear-gradient(45deg, #66BB6A, #81C784);">
-                    <div class="text-center text-white">
-                        <div style="font-size: 1.5rem; font-weight: bold; letter-spacing: 2px;">SUKUMA</div>
-                        <small class="text-uppercase tracking-wider">Vegetable Dish</small>
-                    </div>
-                </div>
+                <div class="dish-img" style="background-image: url('https://images.unsplash.com/photo-1540420773420-3366772f4999?w=800&q=80');"></div>
                 <div class="card-body">
-                    <span class="badge mb-2" style="background-color: #1B5E20;">Farm Fresh</span>
-                    <h5 class="card-title fw-bold" style="color: #5D4037;">Sukuma Wiki</h5>
-                    <p class="card-text text-muted">Collard greens cooked with onions and tomatoes. We eat this almost every day - it's affordable and keeps us going.</p>
+                    <span class="badge badge-earth mb-2">Farm Fresh</span>
+                    <h5 class="card-title fw-bold text-espresso">Sukuma Wiki</h5>
+                    <p class="card-text text-soft">Collard greens cooked with onions and tomatoes. We eat this almost every day — affordable and full of goodness.</p>
                 </div>
-                <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center pb-3">
-                    <span class="fw-bold" style="color: #BF360C;">KES 350</span>
+                <div class="card-footer bg-transparent border-0 d-flex justify-content-between align-items-center pb-3">
+                    <span class="price">KES 350</span>
                     <a href="#" class="btn btn-sm btn-outline-primary">Order Now</a>
                 </div>
             </div>
@@ -91,19 +90,14 @@
 
         <div class="col">
             <div class="card h-100">
-                <div class="rounded-top" style="min-height: 200px; display: flex; align-items: center; justify-content: center; background: linear-gradient(45deg, #FFA726, #FFB74D);">
-                    <div class="text-center text-white">
-                        <div style="font-size: 1.5rem; font-weight: bold; letter-spacing: 2px;">CHAPATI</div>
-                        <small class="text-uppercase tracking-wider">Flatbread</small>
-                    </div>
-                </div>
+                <div class="dish-img" style="background-image: url('https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=800&q=80');"></div>
                 <div class="card-body">
-                    <span class="badge mb-2" style="background-color: #BF360C;">Chef's Special</span>
-                    <h5 class="card-title fw-bold" style="color: #5D4037;">Chapati with Stew</h5>
-                    <p class="card-text text-muted">Soft flatbread served with beef or chicken stew. My mother makes the best chapatis - everyone asks for her recipe.</p>
+                    <span class="badge badge-gold mb-2">Chef's Special</span>
+                    <h5 class="card-title fw-bold text-espresso">Chapati with Stew</h5>
+                    <p class="card-text text-soft">Soft, layered flatbread served with beef or chicken stew. Mama makes the best — everyone asks for her recipe.</p>
                 </div>
-                <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center pb-3">
-                    <span class="fw-bold" style="color: #BF360C;">KES 450</span>
+                <div class="card-footer bg-transparent border-0 d-flex justify-content-between align-items-center pb-3">
+                    <span class="price">KES 450</span>
                     <a href="#" class="btn btn-sm btn-outline-primary">Order Now</a>
                 </div>
             </div>
@@ -111,19 +105,14 @@
 
         <div class="col">
             <div class="card h-100">
-                <div class="rounded-top" style="min-height: 200px; display: flex; align-items: center; justify-content: center; background: linear-gradient(45deg, #AB47BC, #BA68C8);">
-                    <div class="text-center text-white">
-                        <div style="font-size: 1.5rem; font-weight: bold; letter-spacing: 2px;">SAMOSA</div>
-                        <small class="text-uppercase tracking-wider">Street Food</small>
-                    </div>
-                </div>
+                <div class="dish-img" style="background-image: url('https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800&q=80');"></div>
                 <div class="card-body">
-                    <span class="badge mb-2" style="background-color: #7B1FA2;">Popular Snack</span>
-                    <h5 class="card-title fw-bold" style="color: #5D4037;">Kenyan Samosas</h5>
-                    <p class="card-text text-muted">Crispy pastries filled with spiced meat or vegetables. Great for tea time or when visitors come by unexpectedly.</p>
+                    <span class="badge badge-clay mb-2">Popular Snack</span>
+                    <h5 class="card-title fw-bold text-espresso">Kenyan Samosas</h5>
+                    <p class="card-text text-soft">Crispy pastries filled with spiced meat or vegetables. Perfect for tea time or when visitors drop by.</p>
                 </div>
-                <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center pb-3">
-                    <span class="fw-bold" style="color: #BF360C;">KES 200</span>
+                <div class="card-footer bg-transparent border-0 d-flex justify-content-between align-items-center pb-3">
+                    <span class="price">KES 200</span>
                     <a href="#" class="btn btn-sm btn-outline-primary">Order Now</a>
                 </div>
             </div>
@@ -131,19 +120,14 @@
 
         <div class="col">
             <div class="card h-100">
-                <div class="rounded-top" style="min-height: 200px; display: flex; align-items: center; justify-content: center; background: linear-gradient(45deg, #26A69A, #4DB6AC);">
-                    <div class="text-center text-white">
-                        <div style="font-size: 1.5rem; font-weight: bold; letter-spacing: 2px;">PILAU</div>
-                        <small class="text-uppercase tracking-wider">Spiced Rice</small>
-                    </div>
-                </div>
+                <div class="dish-img" style="background-image: url('https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=800&q=80');"></div>
                 <div class="card-body">
-                    <span class="badge mb-2" style="background-color: #00695C;">Coastal Special</span>
-                    <h5 class="card-title fw-bold" style="color: #5D4037;">Coastal Pilau</h5>
-                    <p class="card-text text-muted">Spiced rice cooked with cardamom, cinnamon, and cloves. My sister from Mombasa taught me how to make this properly.</p>
+                    <span class="badge badge-earth mb-2">Coastal Special</span>
+                    <h5 class="card-title fw-bold text-espresso">Coastal Pilau</h5>
+                    <p class="card-text text-soft">Spiced rice with cardamom, cinnamon, and cloves. My sister from Mombasa taught me to make it properly.</p>
                 </div>
-                <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center pb-3">
-                    <span class="fw-bold" style="color: #BF360C;">KES 550</span>
+                <div class="card-footer bg-transparent border-0 d-flex justify-content-between align-items-center pb-3">
+                    <span class="price">KES 550</span>
                     <a href="#" class="btn btn-sm btn-outline-primary">Order Now</a>
                 </div>
             </div>
@@ -151,19 +135,14 @@
 
         <div class="col">
             <div class="card h-100">
-                <div class="rounded-top" style="min-height: 200px; display: flex; align-items: center; justify-content: center; background: linear-gradient(45deg, #EF5350, #E57373);">
-                    <div class="text-center text-white">
-                        <div style="font-size: 1.5rem; font-weight: bold; letter-spacing: 2px;">MAHINDI</div>
-                        <small class="text-uppercase tracking-wider">Corn Dish</small>
-                    </div>
-                </div>
+                <div class="dish-img" style="background-image: url('https://images.unsplash.com/photo-1551754655-cd27e38d2076?w=800&q=80');"></div>
                 <div class="card-body">
-                    <span class="badge mb-2" style="background-color: #C62828;">Seasonal</span>
-                    <h5 class="card-title fw-bold" style="color: #5D4037;">Mahindi ya Kukaanga</h5>
-                    <p class="card-text text-muted">Fried corn with onions and tomatoes. This reminds me of when I was young - we'd buy roasted corn from street vendors after school.</p>
+                    <span class="badge badge-gold mb-2">Seasonal</span>
+                    <h5 class="card-title fw-bold text-espresso">Mahindi ya Kukaanga</h5>
+                    <p class="card-text text-soft">Fried corn with onions and tomatoes — like the roasted corn we'd buy from street vendors after school.</p>
                 </div>
-                <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center pb-3">
-                    <span class="fw-bold" style="color: #BF360C;">KES 300</span>
+                <div class="card-footer bg-transparent border-0 d-flex justify-content-between align-items-center pb-3">
+                    <span class="price">KES 300</span>
                     <a href="#" class="btn btn-sm btn-outline-primary">Order Now</a>
                 </div>
             </div>
@@ -172,30 +151,32 @@
     </div>
 </div>
 
-<div class="py-5 mt-5" style="background-color: #FFF8E1;">
+<div class="py-5 mt-5" style="background-color: var(--paper-soft); border-top: 1px solid var(--taupe); border-bottom: 1px solid var(--taupe);">
     <div class="container text-center">
-        <h3 class="fw-bold mb-3" style="color: #5D4037;">Why We're Different</h3>
-        <p class="text-muted mb-4">We cook the way we were taught by our mothers and grandmothers</p>
-        <div class="row">
-            <div class="col-md-4 mb-3">
-                <div class="p-4 rounded" style="background-color: white;">
-                    <div style="font-size: 1.5rem; margin-bottom: 1rem; color: #33691E; font-weight: bold;">FRESH</div>
-                    <h5 class="fw-bold" style="color: #5D4037;">Local Markets</h5>
-                    <p class="text-muted small">We buy our vegetables and meat from local markets every morning</p>
+        <p class="section-eyebrow">The Naggy's Way</p>
+        <h3 class="display-6 fw-bold text-espresso mb-1">Why We're Different</h3>
+        <hr class="divider">
+        <p class="text-soft mb-5">We cook the way we were taught by our mothers and grandmothers.</p>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="p-4 rounded h-100" style="background-color: var(--cream); border: 1px solid var(--taupe);">
+                    <div class="feature-icon"><i class="bi bi-basket2"></i></div>
+                    <h5 class="fw-bold text-espresso">Local Markets</h5>
+                    <p class="text-soft small mb-0">We buy our vegetables and meat from local markets every single morning.</p>
                 </div>
             </div>
-            <div class="col-md-4 mb-3">
-                <div class="p-4 rounded" style="background-color: white;">
-                    <div style="font-size: 1.5rem; margin-bottom: 1rem; color: #33691E; font-weight: bold;">AUTHENTIC</div>
-                    <h5 class="fw-bold" style="color: #5D4037;">Traditional Methods</h5>
-                    <p class="text-muted small">No shortcuts - we cook everything the traditional way, just like at home</p>
+            <div class="col-md-4">
+                <div class="p-4 rounded h-100" style="background-color: var(--cream); border: 1px solid var(--taupe);">
+                    <div class="feature-icon"><i class="bi bi-fire"></i></div>
+                    <h5 class="fw-bold text-espresso">Traditional Methods</h5>
+                    <p class="text-soft small mb-0">No shortcuts — we cook everything the traditional way, just like at home.</p>
                 </div>
             </div>
-            <div class="col-md-4 mb-3">
-                <div class="p-4 rounded" style="background-color: white;">
-                    <div style="font-size: 1.5rem; margin-bottom: 1rem; color: #33691E; font-weight: bold;">HERITAGE</div>
-                    <h5 class="fw-bold" style="color: #5D4037;">Kenyan Recipes</h5>
-                    <p class="text-muted small">Recipes from our family that have been passed down for generations</p>
+            <div class="col-md-4">
+                <div class="p-4 rounded h-100" style="background-color: var(--cream); border: 1px solid var(--taupe);">
+                    <div class="feature-icon"><i class="bi bi-house-heart"></i></div>
+                    <h5 class="fw-bold text-espresso">Kenyan Heritage</h5>
+                    <p class="text-soft small mb-0">Family recipes that have been passed down for generations.</p>
                 </div>
             </div>
         </div>

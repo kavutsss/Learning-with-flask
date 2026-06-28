@@ -3,96 +3,111 @@
 {% block title %}About Naggy's Kitchen{% endblock %}
 
 {% block content %}
+<div style="height: 360px; background: linear-gradient(rgba(58, 42, 32, 0.55), rgba(58, 42, 32, 0.7)), url('https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=1600&q=80'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center;">
+    <div class="container text-center text-white">
+        <p class="section-eyebrow" style="color: var(--gold);">Our Story</p>
+        <h1 class="display-4 fw-bold mb-0" style="text-shadow: 2px 2px 6px rgba(0,0,0,0.5);">From Mama's Kitchen to Yours</h1>
+    </div>
+</div>
+
 <div class="container my-5 py-4">
     <div class="row align-items-center g-5">
         <div class="col-lg-6">
-            <h1 class="display-5 fw-bold mb-3" style="color: #5D4037; font-family: 'Georgia', serif;">Our Story</h1>
-            <p class="lead fw-semibold" style="color: #33691E;">How we started cooking for others</p>
-            <p class="text-muted">
-                I started cooking in my mother's kitchen in Nairobi when I was young. She taught me how to make ugali, chapati, and all the dishes we eat at home. When I moved to my own place, neighbors would smell my cooking and ask if I could make extra for them too.
-            </p>
-            <p class="text-muted">
-                That's how Naggy's Kitchen began - just me cooking for people who missed home-cooked meals. Now we have a small team, but we still cook the same way my mother taught me. No fancy techniques, just good food made with care.
-            </p>
-            <p class="text-muted">
-                I still go to Marikiti Market myself to choose the best vegetables. I know the farmers by name, and they know what I like. This is important to me because the food we eat should come from people we trust.
-            </p>
+            <img src="https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=900&q=80" alt="Cooking with care" class="img-fluid rounded shadow-sm" style="border: 1px solid var(--taupe);">
         </div>
         <div class="col-lg-6">
-            <div class="p-5 rounded" style="background-color: #FFF8E1; border: 2px solid #5D4037;">
-                <h4 class="fw-bold mb-4 text-center" style="color: #5D4037;">What We Do Differently</h4>
-                <div class="mb-4">
-                    <div class="d-flex align-items-start mb-3">
-                        <div style="font-size: 1.2rem; margin-right: 1rem; color: #33691E; font-weight: bold; min-width: 100px;">LOCAL</div>
-                        <div>
-                            <h5 class="fw-bold" style="color: #5D4037;">Kenyan Markets</h5>
-                            <p class="text-muted small mb-0">I go to Marikiti Market myself every morning to pick the freshest vegetables and meat. I know the vendors there.</p>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-start mb-3">
-                        <div style="font-size: 1.2rem; margin-right: 1rem; color: #33691E; font-weight: bold; min-width: 100px;">FAMILY</div>
-                        <div>
-                            <h5 class="fw-bold" style="color: #5D4037;">Family Recipes</h5>
-                            <p class="text-muted small mb-0">These are recipes my mother taught me, and her mother taught her. We don't use recipes from the internet.</p>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-start mb-3">
-                        <div style="font-size: 1.2rem; margin-right: 1rem; color: #33691E; font-weight: bold; min-width: 100px;">CARE</div>
-                        <div>
-                            <h5 class="fw-bold" style="color: #5D4037;">Made with Care</h5>
-                            <p class="text-muted small mb-0">When I cook, I cook like I'm feeding my own family. That's the only way I know how to do it.</p>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-start">
-                        <div style="font-size: 1.2rem; margin-right: 1rem; color: #33691E; font-weight: bold; min-width: 100px;">HONEST</div>
-                        <div>
-                            <h5 class="fw-bold" style="color: #5D4037;">No Shortcuts</h5>
-                            <p class="text-muted small mb-0">We don't use pre-made mixes or frozen food. Everything is made from scratch, every single day.</p>
-                        </div>
-                    </div>
+            <p class="section-eyebrow">How It Began</p>
+            <h2 class="display-6 fw-bold text-espresso">Cooking for People Who Missed Home</h2>
+            <hr class="divider divider-start">
+            <p class="text-soft">
+                I started cooking in my mother's kitchen in Nairobi when I was young. She taught me how to make ugali, chapati, and all the dishes we eat at home. When I moved to my own place, neighbours would smell my cooking and ask if I could make extra for them too.
+            </p>
+            <p class="text-soft">
+                That's how Naggy's Kitchen began — just me cooking for people who missed home-cooked meals. Now we have a small team, but we still cook the same way my mother taught me. No fancy techniques, just good food made with care.
+            </p>
+            <p class="text-soft mb-0">
+                I still go to Marikiti Market myself to choose the best vegetables. I know the farmers by name, and they know what I like. The food we eat should come from people we trust.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="py-5" style="background-color: var(--paper-soft); border-top: 1px solid var(--taupe); border-bottom: 1px solid var(--taupe);">
+    <div class="container">
+        <div class="text-center mb-5">
+            <p class="section-eyebrow">Our Promise</p>
+            <h3 class="display-6 fw-bold text-espresso mb-1">What We Do Differently</h3>
+            <hr class="divider">
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="p-4 rounded h-100" style="background-color: var(--cream); border: 1px solid var(--taupe);">
+                    <div class="feature-icon"><i class="bi bi-basket2"></i></div>
+                    <h5 class="fw-bold text-espresso text-center">Kenyan Markets</h5>
+                    <p class="text-soft small mb-0 text-center">I visit Marikiti Market myself every morning to pick the freshest vegetables and meat from vendors I know.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="p-4 rounded h-100" style="background-color: var(--cream); border: 1px solid var(--taupe);">
+                    <div class="feature-icon"><i class="bi bi-people"></i></div>
+                    <h5 class="fw-bold text-espresso text-center">Family Recipes</h5>
+                    <p class="text-soft small mb-0 text-center">These are recipes my mother taught me, and her mother taught her — not recipes from the internet.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="p-4 rounded h-100" style="background-color: var(--cream); border: 1px solid var(--taupe);">
+                    <div class="feature-icon"><i class="bi bi-house-heart"></i></div>
+                    <h5 class="fw-bold text-espresso text-center">Made with Care</h5>
+                    <p class="text-soft small mb-0 text-center">When I cook, I cook like I'm feeding my own family. That's the only way I know how to do it.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="p-4 rounded h-100" style="background-color: var(--cream); border: 1px solid var(--taupe);">
+                    <div class="feature-icon"><i class="bi bi-patch-check"></i></div>
+                    <h5 class="fw-bold text-espresso text-center">No Shortcuts</h5>
+                    <p class="text-soft small mb-0 text-center">No pre-made mixes or frozen food. Everything is made from scratch, every single day.</p>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="py-5 my-5" style="background-color: #5D4037; color: #FFF8E1;">
-    <div class="container text-center">
-        <h3 class="fw-bold mb-4">From Naggy</h3>
+<div class="py-5 my-0" style="background-color: var(--espresso); color: var(--paper-soft);">
+    <div class="container text-center py-3">
+        <i class="bi bi-quote" style="font-size: 3rem; color: var(--gold);"></i>
         <div class="row justify-content-center">
             <div class="col-lg-8">
-                <p class="lead fst-italic mb-4">
-                    "I believe that food is how we show people we care about them. When someone eats at my table, they become family. That's how I was raised, and that's how I run my kitchen."
+                <p class="mb-4" style="font-family: 'Cormorant Garamond', serif; font-size: 1.9rem; font-style: italic; line-height: 1.5; color: var(--cream);">
+                    "Food is how we show people we care about them. When someone eats at my table, they become family."
                 </p>
-                <p class="mb-0">
-                    I hope you'll try our food and taste the love that goes into every dish. Come as a stranger, leave as family.
-                </p>
+                <p class="mb-1" style="color: var(--gold); letter-spacing: 2px; text-transform: uppercase; font-size: 0.8rem;">— Naggy</p>
+                <p class="small mb-0" style="color: rgba(251, 247, 238, 0.7);">Come as a stranger, leave as family.</p>
             </div>
         </div>
     </div>
 </div>
 
 <div class="container my-5">
-    <div class="row text-center">
-        <div class="col-md-4 mb-4">
-            <div class="p-4 rounded h-100" style="background-color: white; border: 1px solid #8D6E63;">
-                <div style="font-size: 2.5rem; margin-bottom: 1rem; color: #33691E; font-weight: bold;">15+</div>
-                <h5 class="fw-bold" style="color: #5D4037;">Years Cooking</h5>
-                <p class="text-muted small">Since I first learned to cook in my mother's kitchen</p>
+    <div class="row text-center g-4">
+        <div class="col-md-4">
+            <div class="p-4 rounded h-100" style="background-color: var(--cream); border: 1px solid var(--taupe);">
+                <div style="font-family: 'Cormorant Garamond', serif; font-size: 3rem; font-weight: 700; color: var(--terracotta);">15+</div>
+                <h5 class="fw-bold text-espresso">Years Cooking</h5>
+                <p class="text-soft small mb-0">Since I first learned to cook in my mother's kitchen.</p>
             </div>
         </div>
-        <div class="col-md-4 mb-4">
-            <div class="p-4 rounded h-100" style="background-color: white; border: 1px solid #8D6E63;">
-                <div style="font-size: 2.5rem; margin-bottom: 1rem; color: #33691E; font-weight: bold;">50+</div>
-                <h5 class="fw-bold" style="color: #5D4037;">Family Recipes</h5>
-                <p class="text-muted small">Dishes I learned from my mother and grandmothers</p>
+        <div class="col-md-4">
+            <div class="p-4 rounded h-100" style="background-color: var(--cream); border: 1px solid var(--taupe);">
+                <div style="font-family: 'Cormorant Garamond', serif; font-size: 3rem; font-weight: 700; color: var(--terracotta);">50+</div>
+                <h5 class="fw-bold text-espresso">Family Recipes</h5>
+                <p class="text-soft small mb-0">Dishes I learned from my mother and grandmothers.</p>
             </div>
         </div>
-        <div class="col-md-4 mb-4">
-            <div class="p-4 rounded h-100" style="background-color: white; border: 1px solid #8D6E63;">
-                <div style="font-size: 2.5rem; margin-bottom: 1rem; color: #33691E; font-weight: bold;">1000+</div>
-                <h5 class="fw-bold" style="color: #5D4037;">Meals Served</h5>
-                <p class="text-muted small">People who have eaten at our table</p>
+        <div class="col-md-4">
+            <div class="p-4 rounded h-100" style="background-color: var(--cream); border: 1px solid var(--taupe);">
+                <div style="font-family: 'Cormorant Garamond', serif; font-size: 3rem; font-weight: 700; color: var(--terracotta);">1000+</div>
+                <h5 class="fw-bold text-espresso">Meals Served</h5>
+                <p class="text-soft small mb-0">People who have eaten at our table.</p>
             </div>
         </div>
     </div>
