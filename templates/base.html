@@ -1,16 +1,95 @@
 {{bootstrap.load_css()}}
-<!-- This is a jinja command that loads the bootstrap css file -->
-<!-- Jinja2 is a templating engine for Python this means that it can be used to generate html files from templates-->
-<!--Templates are html files that contain variables and expressions that are replaced with actual values when the template is rendered-->
-{% block title %}Naggy's Catalog{% endblock %}
-<!--This creates a placeholder whereby if the child template doesnt provide a title, the default title will be "Naggy's Catalog"-->
-<body class="d-flex flex-column min-vh-100 bg-light">
-<a class="navbar-brand fw-bold" href="{{url_for('home')}}">Naggy's Catalog</a>
-<!--The href attribute is used to specify the URL of the page the link goes to-->
-<!--The url_for() function is used to generate URLs for Flask routes, this typically means that the url will move to app.py look for the home function then return the home template-->
-<!--This is baisically done so as to ensure that there are no broken links in case you decide to change the url path-->
-<!--ps;A broken link is a link that does not work, it is usually caused by a typo in the url or a missing file-->
+<style>
+:root {
+    --earth-brown: #5D4037;
+    --earth-green: #33691E;
+    --warm-beige: #F5F1E8;
+    --soft-cream: #FFF8E1;
+    --warm-orange: #BF360C;
+    --forest-green: #1B5E20;
+    --natural-gray: #8D6E63;
+}
+body {
+    background-color: var(--warm-beige);
+    font-family: 'Georgia', serif;
+}
+.navbar {
+    background-color: var(--earth-brown);
+    border-bottom: 3px solid var(--earth-green);
+}
+.navbar-brand {
+    color: var(--soft-cream) !important;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+.nav-link {
+    color: var(--soft-cream) !important;
+    font-weight: 500;
+}
+.nav-link:hover {
+    color: var(--warm-orange) !important;
+}
+.card {
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(93, 64, 55, 0.15);
+}
+.btn-primary {
+    background-color: var(--earth-green);
+    border-color: var(--earth-green);
+}
+.btn-primary:hover {
+    background-color: var(--forest-green);
+    border-color: var(--forest-green);
+}
+.btn-outline-primary {
+    color: var(--earth-green);
+    border-color: var(--earth-green);
+}
+.btn-outline-primary:hover {
+    background-color: var(--earth-green);
+    border-color: var(--earth-green);
+}
+.badge {
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: var(--earth-brown);
+    border-radius: 50%;
+    padding: 10px;
+}
+.carousel {
+    box-shadow: 0 4px 12px rgba(93, 64, 55, 0.2);
+}
+</style>
+{% block title %}Naggy's Kitchen{% endblock %}
+<body class="d-flex flex-column min-vh-100">
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="{{url_for('home')}}">Naggy's Catalog</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{url_for('home')}}">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{url_for('about')}}">Our Story</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 {% block content %}{% endblock %}
+<footer class="mt-auto py-4" style="background-color: var(--earth-brown); color: var(--soft-cream);">
+    <div class="container text-center">
+        <p class="mb-0">&copy; 2024 Naggy's Kitchen. Authentic Kenyan Cuisine. All rights reserved.</p>
+    </div>
+</footer>
 {{bootstrap.load_js()}}
-<!-- This is a jinja command that loads the bootstrap js file , it handles things like dropdowns, modals, and other interactive elements-->
 </body>

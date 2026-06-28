@@ -1,39 +1,98 @@
 {% extends 'base.html' %}
 
-{% block title %}About Our Catalog{% endblock %}
+{% block title %}About Naggy's Kitchen{% endblock %}
 
 {% block content %}
 <div class="container my-5 py-4">
     <div class="row align-items-center g-5">
         <div class="col-lg-6">
-            <h1 class="display-5 fw-bold text-dark mb-3">About Our Curated Catalog</h1>
-            <p class="lead text-primary fw-semibold">I  pride myself on inventory precision and quality tracking.</p>
+            <h1 class="display-5 fw-bold mb-3" style="color: #5D4037; font-family: 'Georgia', serif;">Our Story</h1>
+            <p class="lead fw-semibold" style="color: #33691E;">How we started cooking for others</p>
             <p class="text-muted">
-                The owner of the esteemed catalog, Naggy puts her heart into creating each prestigious dish with the finest ingredients and attention to detail.
+                I started cooking in my mother's kitchen in Nairobi when I was young. She taught me how to make ugali, chapati, and all the dishes we eat at home. When I moved to my own place, neighbors would smell my cooking and ask if I could make extra for them too.
             </p>
             <p class="text-muted">
-                Her story on the why and how of this catalog is yet to be written.Though each dish is a story to be experienced on it's own.
+                That's how Naggy's Kitchen began - just me cooking for people who missed home-cooked meals. Now we have a small team, but we still cook the same way my mother taught me. No fancy techniques, just good food made with care.
+            </p>
+            <p class="text-muted">
+                I still go to Marikiti Market myself to choose the best vegetables. I know the farmers by name, and they know what I like. This is important to me because the food we eat should come from people we trust.
             </p>
         </div>
         <div class="col-lg-6">
-            <div class="p-4 bg-white border rounded shadow-sm">
-                <h4 class="fw-bold mb-3 text-center">Catalog Highlights</h4>
-                <table class="table table-borderless mb-0">
-                    <tbody>
-                        <tr>
-                            <td class="fw-bold text-primary"><i class="bi bi-check-circle-fill me-2"></i> Verified Supply</td>
-                            <td class="text-muted">All catalog entries are verified daily.</td>
-                        </tr>
-                        <tr>
-                            <td class="fw-bold text-primary"><i class="bi bi-sliders me-2"></i> Advanced Filters</td>
-                            <td class="text-muted">Dynamic search updates (Coming Soon).</td>
-                        </tr>
-                        <tr>
-                            <td class="fw-bold text-primary"><i class="bi bi-shield-lock-fill me-2"></i> Secure Architecture</td>
-                            <td class="text-muted">Built on safe Flask request structures.</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="p-5 rounded" style="background-color: #FFF8E1; border: 2px solid #5D4037;">
+                <h4 class="fw-bold mb-4 text-center" style="color: #5D4037;">What We Do Differently</h4>
+                <div class="mb-4">
+                    <div class="d-flex align-items-start mb-3">
+                        <div style="font-size: 1.2rem; margin-right: 1rem; color: #33691E; font-weight: bold; min-width: 100px;">LOCAL</div>
+                        <div>
+                            <h5 class="fw-bold" style="color: #5D4037;">Kenyan Markets</h5>
+                            <p class="text-muted small mb-0">I go to Marikiti Market myself every morning to pick the freshest vegetables and meat. I know the vendors there.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start mb-3">
+                        <div style="font-size: 1.2rem; margin-right: 1rem; color: #33691E; font-weight: bold; min-width: 100px;">FAMILY</div>
+                        <div>
+                            <h5 class="fw-bold" style="color: #5D4037;">Family Recipes</h5>
+                            <p class="text-muted small mb-0">These are recipes my mother taught me, and her mother taught her. We don't use recipes from the internet.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start mb-3">
+                        <div style="font-size: 1.2rem; margin-right: 1rem; color: #33691E; font-weight: bold; min-width: 100px;">CARE</div>
+                        <div>
+                            <h5 class="fw-bold" style="color: #5D4037;">Made with Care</h5>
+                            <p class="text-muted small mb-0">When I cook, I cook like I'm feeding my own family. That's the only way I know how to do it.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start">
+                        <div style="font-size: 1.2rem; margin-right: 1rem; color: #33691E; font-weight: bold; min-width: 100px;">HONEST</div>
+                        <div>
+                            <h5 class="fw-bold" style="color: #5D4037;">No Shortcuts</h5>
+                            <p class="text-muted small mb-0">We don't use pre-made mixes or frozen food. Everything is made from scratch, every single day.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="py-5 my-5" style="background-color: #5D4037; color: #FFF8E1;">
+    <div class="container text-center">
+        <h3 class="fw-bold mb-4">From Naggy</h3>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <p class="lead fst-italic mb-4">
+                    "I believe that food is how we show people we care about them. When someone eats at my table, they become family. That's how I was raised, and that's how I run my kitchen."
+                </p>
+                <p class="mb-0">
+                    I hope you'll try our food and taste the love that goes into every dish. Come as a stranger, leave as family.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container my-5">
+    <div class="row text-center">
+        <div class="col-md-4 mb-4">
+            <div class="p-4 rounded h-100" style="background-color: white; border: 1px solid #8D6E63;">
+                <div style="font-size: 2.5rem; margin-bottom: 1rem; color: #33691E; font-weight: bold;">15+</div>
+                <h5 class="fw-bold" style="color: #5D4037;">Years Cooking</h5>
+                <p class="text-muted small">Since I first learned to cook in my mother's kitchen</p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="p-4 rounded h-100" style="background-color: white; border: 1px solid #8D6E63;">
+                <div style="font-size: 2.5rem; margin-bottom: 1rem; color: #33691E; font-weight: bold;">50+</div>
+                <h5 class="fw-bold" style="color: #5D4037;">Family Recipes</h5>
+                <p class="text-muted small">Dishes I learned from my mother and grandmothers</p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="p-4 rounded h-100" style="background-color: white; border: 1px solid #8D6E63;">
+                <div style="font-size: 2.5rem; margin-bottom: 1rem; color: #33691E; font-weight: bold;">1000+</div>
+                <h5 class="fw-bold" style="color: #5D4037;">Meals Served</h5>
+                <p class="text-muted small">People who have eaten at our table</p>
             </div>
         </div>
     </div>
