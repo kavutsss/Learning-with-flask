@@ -1,10 +1,9 @@
 {% extends 'base.html' %}
-{% block title %}Home | Naggy's Kitchen{% endblock %}
 {% block content %}
-<div id="heroCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+<div id="heroCarousel" class="carousel slide carousel-fademb-5" data-bs-ride="carousel"data-bs-interval="4000">
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <div style="height: 500px; background: linear-gradient(rgba(93, 64, 55, 0.7), rgba(51, 105, 30, 0.7)), url('https://images.unsplash.com/photo-1606787366850-de6330128bfc?w=1200'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center;">
+            <div style="height: 500px; background: linear-gradient(rgba(93, 64, 55, 0.7), rgba(69, 84, 64, 0.7)), url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center;">
                 <div class="container text-center text-white">
                     <h1 class="display-4 fw-bold" style="font-family: 'Georgia', serif; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Karibu to Naggy's Kitchen</h1>
                     <p class="lead mx-auto" style="max-width: 600px; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">Authentic Kenyan flavors prepared with traditional recipes and fresh local ingredients</p>
@@ -12,7 +11,11 @@
             </div>
         </div>
         <div class="carousel-item">
-            <div style="height: 500px; background: linear-gradient(rgba(93, 64, 55, 0.7), rgba(51, 105, 30, 0.7)), url('https://images.unsplash.com/photo-1512058564366-18510be2db19?w=1200'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center;">
+            <div class="carousel-caption">
+                <h1 class="display-4 fw-bold" style="font-family: 'Georgia', serif; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Taste Kenyan Tradition</h1>
+                <p class="lead mx-auto" style="max-width: 600px; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">Experience the rich culinary heritage of Kenya in every dish</p>
+            </div>
+            <div style="height: 500px; background: linear-gradient(rgba(93, 64, 55, 0.7), rgba(50, 57, 46, 0.7)), url('https://plus.unsplash.com/premium_photo-1695297516676-04a259917c03?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center;">
                 <div class="container text-center text-white">
                     <h1 class="display-4 fw-bold" style="font-family: 'Georgia', serif; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Taste Kenyan Tradition</h1>
                     <p class="lead mx-auto" style="max-width: 600px; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">Experience the rich culinary heritage of Kenya in every dish</p>
@@ -20,7 +23,11 @@
             </div>
         </div>
         <div class="carousel-item">
-            <div style="height: 500px; background: linear-gradient(rgba(93, 64, 55, 0.7), rgba(51, 105, 30, 0.7)), url('https://images.unsplash.com/photo-1544025162-d76694265947?w=1200'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center;">
+            <div class="carousel-caption">
+                <h1 class="display-4 fw-bold" style="font-family: 'Georgia', serif; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Fresh from Kenyan Farms</h1>
+                <p class="lead mx-auto" style="max-width: 600px; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">Locally sourced ingredients prepared with love and care</p>
+            </div>
+            <div style="height: 500px; background: linear-gradient(rgba(93, 64, 55, 0.7), rgba(88, 101, 83, 0.7)), url('https://images.unsplash.com/photo-1603496987674-79600a000f55?q=80&w=685&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center;">
                 <div class="container text-center text-white">
                     <h1 class="display-4 fw-bold" style="font-family: 'Georgia', serif; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Fresh from Kenyan Farms</h1>
                     <p class="lead mx-auto" style="max-width: 600px; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">Locally sourced ingredients prepared with love and care</p>
@@ -51,7 +58,7 @@
         
         <div class="col">
             <div class="card h-100">
-                <div class="rounded-top" style="min-height: 200px; display: flex; align-items: center; justify-content: center; background: linear-gradient(45deg, #8D6E63, #A1887F);">
+                <div class="rounded-top" style="min-height: 200px; background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1736239093100-33b23cf16f54?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center;">
                     <div class="text-center text-white">
                         <div style="font-size: 1.5rem; font-weight: bold; letter-spacing: 2px;">UGALI</div>
                         <small class="text-uppercase tracking-wider">Traditional Staple</small>
@@ -59,8 +66,8 @@
                 </div>
                 <div class="card-body">
                     <span class="badge mb-2" style="background-color: #33691E;">Signature Dish</span>
-                    <h5 class="card-title fw-bold" style="color: #5D4037;">Ugali with Nyama Choma</h5>
-                    <p class="card-text text-muted">Our maize meal served with roasted meat. This is what we eat when we gather with family and friends.</p>
+                    <h5 class="card-title fw-bold" style="color: #5D4037;">Ugali with chicken curry </h5>
+                    <p class="card-text text-muted">Our maize meal served with brased chicken curry and vegetables. This is what we eat when we gather with family and friends.</p>
                 </div>
                 <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center pb-3">
                     <span class="fw-bold" style="color: #BF360C;">KES 850</span>
@@ -71,8 +78,8 @@
 
         <div class="col">
             <div class="card h-100">
-                <div class="rounded-top" style="min-height: 200px; display: flex; align-items: center; justify-content: center; background: linear-gradient(45deg, #66BB6A, #81C784);">
-                    <div class="text-center text-white">
+                <div class="rounded-top" style="min-height: 200px; background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1772198537754-6ad327158f96?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center;">
+                                    <div class="text-center text-white">
                         <div style="font-size: 1.5rem; font-weight: bold; letter-spacing: 2px;">SUKUMA</div>
                         <small class="text-uppercase tracking-wider">Vegetable Dish</small>
                     </div>
@@ -91,7 +98,7 @@
 
         <div class="col">
             <div class="card h-100">
-                <div class="rounded-top" style="min-height: 200px; display: flex; align-items: center; justify-content: center; background: linear-gradient(45deg, #FFA726, #FFB74D);">
+                <div class="rounded-top" style="min-height: 200px; background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1708782343717-be4ea260249a?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center;">
                     <div class="text-center text-white">
                         <div style="font-size: 1.5rem; font-weight: bold; letter-spacing: 2px;">CHAPATI</div>
                         <small class="text-uppercase tracking-wider">Flatbread</small>
@@ -111,7 +118,7 @@
 
         <div class="col">
             <div class="card h-100">
-                <div class="rounded-top" style="min-height: 200px; display: flex; align-items: center; justify-content: center; background: linear-gradient(45deg, #AB47BC, #BA68C8);">
+                <div class="rounded-top" style="min-height: 200px; background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://plus.unsplash.com/premium_photo-1695297516676-04a259917c03?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center;">
                     <div class="text-center text-white">
                         <div style="font-size: 1.5rem; font-weight: bold; letter-spacing: 2px;">SAMOSA</div>
                         <small class="text-uppercase tracking-wider">Street Food</small>
@@ -131,8 +138,7 @@
 
         <div class="col">
             <div class="card h-100">
-                <div class="rounded-top" style="min-height: 200px; display: flex; align-items: center; justify-content: center; background: linear-gradient(45deg, #26A69A, #4DB6AC);">
-                    <div class="text-center text-white">
+                <div class="rounded-top" style="min-height: 200px; background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://plus.unsplash.com/premium_photo-1694141252774-c937d97641da?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Display'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center;">                 <div class="text-center text-white">
                         <div style="font-size: 1.5rem; font-weight: bold; letter-spacing: 2px;">PILAU</div>
                         <small class="text-uppercase tracking-wider">Spiced Rice</small>
                     </div>
@@ -151,7 +157,7 @@
 
         <div class="col">
             <div class="card h-100">
-                <div class="rounded-top" style="min-height: 200px; display: flex; align-items: center; justify-content: center; background: linear-gradient(45deg, #EF5350, #E57373);">
+                <div class="rounded-top" style="min-height: 200px; background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1774428755120-e1b2d2f208fe?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center;">
                     <div class="text-center text-white">
                         <div style="font-size: 1.5rem; font-weight: bold; letter-spacing: 2px;">MAHINDI</div>
                         <small class="text-uppercase tracking-wider">Corn Dish</small>
